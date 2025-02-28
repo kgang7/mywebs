@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django.urls import path
-from myweb.view.http_test import http_test
-from myweb.view.json_test import json_test
+from myweb.view import http_test
+from myweb.view import json_test
 
 urlpatterns = [
     path('admin/', admin.site.urls),
