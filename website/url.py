@@ -1,10 +1,9 @@
 from django.contrib import admin
-from django.urls import path 
-from website.views import http_test
-from website.views import json_test
+from django.url import path 
+from website.views import *
 
 urlpatterns = [
-    path('http_test', http_test),
-    path('json_test', json_test),
-    
+   path('home',index_views),
+   path('about',about_views),
+   path('contact',contact_views),
 ]
