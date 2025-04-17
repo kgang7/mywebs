@@ -5,12 +5,12 @@ from django.template import Template
 
 
 def index_views(request):
-    return render(request, 'websites/index.html')
+    return render(request, 'templates/index.html')
 
 
 def about_views(request):
-    return render(request, 'websites/about.html')
+    return render(request, 'templates/about.html')
 
 
 def contact_views(request):
-    return render(request, 'websites/contact.html')
+    return render(request, 'templates/contact.html')
