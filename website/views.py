@@ -5,7 +5,7 @@ from django.template import Template
 
 
 def index_views(request):
-    return render(request, 'templates/mysite/index.html')
+    return render(request, 'mysite/index.html')
 
 
 def about_views(request):
