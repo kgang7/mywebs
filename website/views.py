@@ -1,7 +1,7 @@
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
 from django.template import Template
-
+from blog.models import Post 
 
 
 def index_views(request):
@@ -14,3 +14,6 @@ def about_views(request):
 
 def contact_views(request):
     return render(request, 'mysite/contact.html')
+
+def test(request):
+    return render(request, 'test.html')
